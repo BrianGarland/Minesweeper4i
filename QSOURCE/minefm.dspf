@@ -1,0 +1,49 @@
+      *
+      * Minesweeper4i - This is the traditional minesweeper game for IBM i
+      *
+      * (c)Copyright 2019 Brian J. Garland
+      *
+     A                                      DSPSIZ(*DS3)
+     A          R LEVEL1
+      *
+     A                                      CSRLOC(ROW COL)
+     A                                      RTNCSRLOC(*MOUSE &ROW &COL)
+     A                                      CF03
+     A                                      CF04
+     A                                      CF05
+     A                                      HELP
+      *
+     A                                  1 35'Minesweeper'
+     A                                      DSPATR(HI)
+      *
+     A            ROW01         37A  O  3 22
+     A            ROW02         37A  O  4 22
+     A            ROW03         37A  O  5 22
+     A            ROW04         37A  O  6 22
+     A            ROW05         37A  O  7 22
+     A            ROW06         37A  O  8 22
+     A            ROW07         37A  O  9 22
+     A            ROW08         37A  O 10 22
+     A            ROW09         37A  O 11 22
+     A            ROW10         37A  O 12 22
+     A            ROW11         37A  O 13 22
+     A            ROW12         37A  O 14 22
+     A            ROW13         37A  O 15 22
+     A            ROW14         37A  O 16 22
+     A            ROW15         37A  O 17 22
+     A            ROW16         37A  O 18 22
+     A            ROW17         37A  O 19 22
+     A            ROW18         37A  O 20 22
+     A            ROW19         37A  O 21 22
+      *
+     A            DUMMY          1A  B 18 70DSPATR(ND PR)
+      *
+     A                                 23  2'F3=Exit' COLOR(BLU)
+     A                                    +2'F4=Flag' COLOR(BLU)
+     A                                    +2'F5=Restart' COLOR(BLU)
+      *
+     A            ERRMSG        70A    24  2DSPATR(HI)
+      *
+     A            ROW            3S 0H
+     A            COL            3S 0H
+      *
