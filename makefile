@@ -1,7 +1,7 @@
 NAME=Minesweeper4i
 BIN_LIB=MINE4I
 DBGVIEW=*SOURCE
-TGTRLS=V7R3M0
+TGTRLS=V7R2M0
 SHELL=/QOpenSys/usr/bin/qsh
 
 #----------
